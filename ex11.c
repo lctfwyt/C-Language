@@ -36,6 +36,10 @@ int main(int argc, char *argv[])
 	while(i < num_states) {
 		printf("state %d: %s\n", i, states[i]);
 		i++;
+		
+		if(i > 3) {
+			break; // ex12: terminate the loop in advance
+		}
 	}
 	
 	return 0;

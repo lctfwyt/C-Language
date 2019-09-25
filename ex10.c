@@ -20,6 +20,10 @@ int main(int argc, char *argv[])
 	int num_states = 4;
 	
 	for(i = 0; i < num_states; i++) {
+		if(i > 2) {
+			break; // ex12: terminate the loop in advance
+		}
+		
 		printf("state %d: %s\n", i, states[i]);
 	}
 	
