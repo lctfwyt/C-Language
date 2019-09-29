@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 	// create two arrays we care about
 	int ages[] = {23, 43, 12, 89, 2};
 	char *names[] = {
-		"Alan", "frank",
+		"Alan", "Frank",
 		"Mary", "John", "Lisa"
 	};
 	
@@ -48,6 +48,13 @@ int main(int argc, char *argv[])
 	{
 		printf("%s lived %d years so far.\n",
 				*cur_name, *cur_age);
+	}
+	
+	printf("---\n");
+	
+	// print addresses
+	for(i = 0; i < count; i++) {
+		printf("%p\t%p\n", cur_name+i, cur_age+i);
 	}
 	
 	return 0;
