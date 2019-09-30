@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <assert.h>
-#include <stdlib.h>
-#include <string.h>
+// #include <assert.h>
+// #include <stdlib.h>
+// #include <string.h>
 
 struct Person {
 	char *name;
@@ -53,7 +53,6 @@ int main(int argc, char *argv[])
 	joe.age = 32;
 	joe.height = 64;
 	joe.weight = 140;
-	
 	
 	struct Person frank;
 	frank.name = "Frank Blank";
