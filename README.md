@@ -1,5 +1,27 @@
-# learn-C
-我的C语言学习之路  
-参考资料：
-- [《笨办法学C》](https://wizardforcel.gitbooks.io/lcthw/content/)
-- [《C程序设计语言（第2版）》](https://github.com/songhuiqing/book/blob/master/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80%EF%BC%88%E7%AC%AC2%E7%89%88%C2%B7%E6%96%B0%E7%89%88%EF%BC%89.pdf)
+# LCTHW (Learn C The Hard Way)
+
+我的C语言学习之路
+
+学习环境： Ubuntu 19.04 系统及其自带 gedit 文本编辑器和 Terminal
+
+参考资料：《Learn C The Hard Way》及其中文版《笨办法学C语言》
+
+## ex01
+
+- 包含头文件`#include <stdio.h>`
+- `main`函数，使用`puts`打印一行字
+- 在 Terminal 中构建`make ex01`并运行`./ex01`程序
+- 删除已构建的程序`rm ex01`
+- 在 Terminal 中使用`man`阅读函数文档
+
+## ex02
+
+使用 Makefile：
+- 批量（以显示所有警告的方式）构建
+- 批量删除
+
+## ex03
+
+- 创建变量并赋值
+- 使用`printf`打印格式化字符串
+- 格式化占位符`%`和转义序列`\`
