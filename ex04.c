@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /* Warning: This program is wrong for purpose. */
-/* simply use "sudo apt-get install valgrind" */
+
+// simply use "sudo apt-get install valgrind"
 
 int main()
 {
