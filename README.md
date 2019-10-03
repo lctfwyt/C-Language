@@ -48,7 +48,7 @@
 
 | 类型 | 声明 | 格式化占位符 |
 | --- | --- | --- |
-| 整数 | int name | %d |
-| 浮点数 | float/double name | %f |
-| 字符(单引号) | char name | %c |
-| 字符串/字符数组(双引号) | char name[] | %s |
+| 整数 | `int name` | `%d` |
+| 浮点数 | `float/double name` | `%f` |
+| 字符(单引号) | `char name` | `%c` |
+| 字符串/字符数组(双引号) | `char name[]` | `%s` |
