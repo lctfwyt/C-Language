@@ -13,11 +13,11 @@ int main(int argc, char *argv[])
 	char full_name[] = {
 		'Z', 'e', 'd',
 		 ' ', 'A', '.', ' ',
-		 'S', 'h', 'a', 'w' // , '\0'
+		 'S', 'h', 'a', 'w', '\0'
 	};
 	
 	// WARNING: On some systems you may have to change the
-	// %ld in this code to a %u since it will use unsigned ints
+	// %ld in this code to a %lu since it will use unsigned ints
 	printf("The size of an int: %ld\n", sizeof(int));
 	printf("The size of areas (int[]): %ld\n",
 			sizeof(areas));
@@ -36,16 +36,20 @@ int main(int argc, char *argv[])
 	printf("The number of chars: %ld\n",
 			sizeof(name) / sizeof(char));
 	printf("The 4th char in name is %c, the 5th %c.\n",
-			name[3], name[4]); // 4th is null, 5th = 1st
+			name[3], name[4]);
+			// 4th is null
+			// 5th starts from 1st of full_name, why?
 	// name[0] = 'S';
 	// printf("%s\n", name); // print "Sed"
 	
 	printf("The size of full_name (char[]): %ld\n",
 			sizeof(full_name));
-	printf("The numberof chars: %ld\n",
+	printf("The number of chars: %ld\n",
 			sizeof(full_name) / sizeof(char));
-	printf("The 12th char in full_name is %c, the 13th %c.\n",
-			full_name[11], full_name[12]); // 12th is null, 13th is different each time
+	printf("The 13th char in full_name is %c, the 14th %c.\n",
+			full_name[12], full_name[13]);
+			// 13th is null
+			// 14th is different each time
 	// full_name[1] = 'o';
 	// printf("%s\n", full_name); // "Zod A. Shaw"
 	
