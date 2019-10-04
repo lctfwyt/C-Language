@@ -6,6 +6,17 @@
 
 参考资料：《Learn C The Hard Way》及其中文版《笨办法学C语言》
 
+## 目录
+
+[ex01 取出尘封的编译器](#ex01 取出尘封的编译器)
+[ex02 现在 make 就是你的 python](#ex02 现在 make 就是你的 python)
+[ex03 格式化打印](#ex03 格式化打印)
+[ex04 引入 Valgrind](#ex04 引入 Valgrind)
+[ex05 C程序的结构](#ex05 C程序的结构)
+[ex06 变量类型](#ex06 变量类型)
+[ex07 更多变量 一些算术](#ex07 更多变量 一些算术)
+[ex08 大小和数组](#ex08 大小和数组)
+
 ## ex01 取出尘封的编译器
 
 - 包含头文件`#include <stdio.h>`
