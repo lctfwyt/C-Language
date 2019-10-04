@@ -6,7 +6,7 @@
 
 参考资料：《Learn C The Hard Way》及其中文版《笨办法学C语言》
 
-## 目录
+## 笔记目录
 
 - [ex01 取出尘封的编译器](#ex01-取出尘封的编译器)
 - [ex02 现在 make 就是你的 python](#ex02-现在-make-就是你的-python)
