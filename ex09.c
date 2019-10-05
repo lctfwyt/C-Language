@@ -4,7 +4,8 @@ int main(int argc, char *argv[])
 {
 	int numbers[4] = {0};
 	char name[4] = {'a'};
-	// char *name = "a\0\0\0"
+	// char *name = "a\0\0\0";
+	// fail when assigning new values to the elements
 	
 	// first, print them out raw
 	printf("numbers: %d %d %d %d\n",
