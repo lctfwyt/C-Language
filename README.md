@@ -6,6 +6,8 @@
 
 参考资料：《Learn C The Hard Way》及其中文版《笨办法学C语言》
 
+在 Terminal 中批量将 ex1-9.c 重命名为 ex01-09.c：`rename 's/ex/ex0/' ex?.c`
+
 ## 笔记目录
 
 - [ex01 取出尘封的编译器](#ex01-取出尘封的编译器)
