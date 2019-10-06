@@ -13,17 +13,19 @@ int main(int argc, char *argv[])
 	// let's make our own array of strings
 	char *states[] = {
 		"California", "Oregon",
-		"Washington", NULL // print (null)
+		"Washington", "Texas" // NULL // print (null)
 	};
 	// states[0] = argv[0];
 	
 	int num_states = 4;
+	// int num_states = 6;
+	// 5th print nothing
+	// 6+ Segmentation fault
 	
 	for(i = 0; i < num_states; i++) {
-		if(i > 2) {
+		/* if(i > 2) {
 			break; // ex12: terminate the loop in advance
-		}
-		
+		} */
 		printf("state %d: %s\n", i, states[i]);
 	}
 	
