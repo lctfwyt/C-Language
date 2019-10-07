@@ -3,6 +3,7 @@
 int main(int argc, char *argv[])
 {
 	int i = 0;
+	
 	if(argc == 1) {
 		printf("You have no arguments. You suck.\n");
 	} else if(argc == 2) {
