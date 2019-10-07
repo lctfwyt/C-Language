@@ -233,7 +233,7 @@ type name([type argument1, ...]) {
 | `*(ptr + i)` | (`ptr`所指位置加上`i`)的值 |
 | `&thing` | `thing`的地址 |
 | `type *ptr = &thing` | `type`类型，名为`ptr`的指针指向`thing`的地址 |
-| `ptr++` | 自增`ptr`所知位置 |
+| `ptr++` | 自增`ptr`所指位置 |
 
 - 三种使用指针遍历其指向的数组的方法：
 	1. `*(ptr + i)`，`i`从 0 到 n-1
@@ -251,7 +251,7 @@ struct name {
 	...
 };
 ```
-- 结构体中类型为字符串的成员要以指针方式创建：`char *element;`
+- 结构体中类型为字符串的成员要以指针方式定义：`char *element;`
 - 头文件`stdlib.h`里的函数：
 	- `malloc(size)`向系统申请分配一块大小为`size`的内存，并返回一个指向它的指针
 	- `free(ptr)`释放`malloc`返回的指针`ptr`所指的内存
