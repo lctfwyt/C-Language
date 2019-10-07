@@ -22,6 +22,7 @@
 - [ex10 字符串数组 循环](#ex10-字符串数组-循环)
 - [ex11 while 循环和布尔表达式](#ex11-while-循环和布尔表达式)
 - [ex12 if, else if, else](#ex12-if,-else-if,-else)
+- [ex13 switch 语句](#ex13-switch-语句)
 
 ## ex01 取出尘封的编译器
 
@@ -156,3 +157,33 @@ CODE;
 | `>` | 大于 | `<=` | 小于等于 | `!` | 非 |
 
 - 提前终止循环`break;`
+
+## ex13 switch 语句
+
+- 非正常终止程序的返回语句`return 1;`
+- `switch`语句：
+```
+switch(SOMETHING) {
+	case ONE_THING:
+		CODE;
+		break;
+	case SECOND_THING: // fallthrough
+	case THIRD_THING:
+		CODE;
+		break;
+	...
+	default:
+		CODE;
+}
+```
+- 如果能够简化，用`if`语句替代
+- ASCII 码：
+
+| 字符 | ASCII 码 |
+| --- | --- |
+| `(space)` | 32 |
+| `0`~`9` | 48 ~ 57 |
+| `A`~`Z` | 65 ~ 90 |
+| `a`~`z` | 97 ~ 122 |
+
+- 转换大小写：直接让字符减去或加上 32

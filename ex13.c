@@ -2,11 +2,11 @@
 
 int main(int argc, char *argv[])
 {
-	/* if(argc != 2) {
+	if(argc == 1) {
 		printf("ERROR: you need one argument.\n");
 		// this is how you abort a program
 		return 1;
-	} */
+	}
 	
 	int j, i = 0;
 	for(j = 1; j < argc; j++) {
@@ -59,6 +59,13 @@ int main(int argc, char *argv[])
 			}
 		}
 		printf("\n");
+	}
+	
+	switch(123) {
+		case 123:
+			printf("Yeah, %d!\n", 123);
+			break;
+		
 	}
 	
 	return 0;
