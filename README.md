@@ -23,6 +23,7 @@
 - [ex11 while 循环和布尔表达式](#ex11-while-循环和布尔表达式)
 - [ex12 if, else if, else](#ex12-if,-else-if,-else)
 - [ex13 switch 语句](#ex13-switch-语句)
+- [ex14 编写并使用函数](#ex14-编写并使用函数)
 
 ## ex01 取出尘封的编译器
 
@@ -142,11 +143,11 @@ CODE;
 ```
 if(TEST) {
 CODE;
-} else if(TEST) {
+} [else if(TEST) {
 CODE;
 } else {
 CODE;
-}
+}]
 ```
 - 布尔运算符：
 
@@ -167,11 +168,11 @@ switch(SOMETHING) {
 	case ONE_THING:
 		CODE;
 		break;
-	case SECOND_THING: // fallthrough
+	[case SECOND_THING: // fallthrough
 	case THIRD_THING:
 		CODE;
 		break;
-	...
+	...]
 	default:
 		CODE;
 }
@@ -187,3 +188,24 @@ switch(SOMETHING) {
 | `a`~`z` | 97 ~ 122 |
 
 - 转换大小写：直接让字符减去或加上 32
+
+## ex14 编写并使用函数
+
+- 如果一个函数还未被定义就被使用，可以做前向声明`type name([type argument1, ...]);`
+- 函数定义：
+```
+type name([type argument1, ...]) {
+	CODE;
+	[return ...;]
+}
+```
+- 头文件`ctype.h`里的函数：
+
+| 函数 | 作用 |
+| --- | --- |
+| `isalpha` | 判断是否是字母 |
+| `isdigit` | 判断是否是数字 |
+| `isalnum` | 判断是否是字母或数字 |
+| `isblank` | 判断是否是空格或 tab |
+
+- 头文件`string.h`里的函数：`strlen`返回一个字符串包含的字符数(不包括末尾的`\0`)

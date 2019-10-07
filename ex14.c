@@ -16,10 +16,10 @@
 	}
 } */
 
-void print_letters(int len, char arg[])
+void print_letters(char arg[])
 {
 	int i = 0;
-	for(i = 0; i < len; i++) {
+	for(i = 0; i < strlen(arg); i++) {
 		char ch = arg[i];
 		
 		// if(can_print_it(ch)) {
@@ -41,8 +41,7 @@ int main(int argc, char *argv[])
 	int i = 0;
 	
 	for(i = 0; i < argc; i++) {
-		int len = strlen(argv[i]);
-		print_letters(len, argv[i]);
+		print_letters(argv[i]);
 	}
 	
 	// print_arguments(argc, argv);
