@@ -10,12 +10,12 @@ int main(int argc, char *argv[])
 		i++;
 	}
 	
-	// reversed version
+	/* // reversed version
 	i = argc;
 	while(i > 0) {
 		printf("arg %d: %s\n", argc-i, argv[argc-i]);
 		i--;
-	}
+	} */
 	
 	// let's make our own array of strings
 	char *states[] = {
@@ -25,21 +25,21 @@ int main(int argc, char *argv[])
 	
 	int num_states = 4;
 	
-	// copy elements of argv to states
+	/* // copy elements of argv to states
 	i = 0;
 	while(i < argc && i < num_states) {
 		states[i] = argv[i];
 		i++;
-	}
+	} */
 	
 	i = 0; // watch for this
 	while(i < num_states) {
 		printf("state %d: %s\n", i, states[i]);
 		i++;
 		
-		if(i > 3) {
+		/* if(i > 3) {
 			break; // ex12: terminate the loop in advance
-		}
+		} */
 	}
 	
 	return 0;
